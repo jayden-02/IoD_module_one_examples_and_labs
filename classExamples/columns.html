@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            align-items: center; 
+        }
+
+        header {
+            width: 100%;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px 0; 
+        }
+
+        .columns {
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            margin-top: 20px;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        img {
+            width: 200px;
+            height: 250px;
+            border: 2px solid black;
+        }
+
+        a:link {
+            text-decoration:none;
+            font-weight: bold;
+        }
+
+        a.top {
+            position: absolute;
+            bottom: -20px;
+        }
+
+        a.bot {
+            position: absolute;
+            top: -20px;
+        }
+    </style>
+    <title>Class Homework Day 1</title>
+</head>
+<body>
+    <header>
+        <h1>Two columns with images and links</h1>
+    </header>
+    <div class="columns">
+        <div class="column">
+            <img src="https://i.pinimg.com/originals/b1/fa/e7/b1fae778e00a9092ad8cc8df3db0dcac.gif">
+            <a class="bot" href="https://i.pinimg.com/originals/b1/fa/e7/b1fae778e00a9092ad8cc8df3db0dcac.gif">Dog!</a>
+        </div>
+        <div class="column">
+            <a class="top" href="https://th.bing.com/th/id/OIP.sdHYua2U0pfjQxOA6-ldYwHaGo?w=537&h=481&rs=1&pid=ImgDetMain">Reindeer!</a>
+            <img src="https://th.bing.com/th/id/OIP.sdHYua2U0pfjQxOA6-ldYwHaGo?w=537&h=481&rs=1&pid=ImgDetMain">
+        </div>
+    </div>
+</body>
+</html>

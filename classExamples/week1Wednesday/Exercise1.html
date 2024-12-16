@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div.formbox {
+                margin: 6px 0px 0px 2px; flex:1
+            }
+            div.outside {
+                display:flex; border: solid 4px red; height: 80vh; justify-content: center; align-items: center
+            }
+            div.inside {
+                border: solid 2px blue
+            }
+        </style>
+    </head>
+<body>
+    <h2>HTML Forms</h2>
+<!-- If you click the "Submit" button, the form-data
+will be sent to a page called "/action_page" -->
+<div class="outside">
+    <div class="inside">
+    <form action="/action_page">
+    <div class="formbox">
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName" value="Joel">
+    </div>
+    <div class="formbox">
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" value="Doe">
+    </div> 
+    <div class="formbox">
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age" value="67">
+    </div> 
+    <div class="formbox">
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" value="John.Doe@hotmail.com">
+    </div> 
+    <input type="submit" value="Submit" style="margin: 10px 0px 8px 40px">
+    </form>
+    </div>
+</div>
+</body>
+</margin>
