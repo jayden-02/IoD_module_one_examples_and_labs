@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style lang="en">
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+</head>
+<body>
+    <div class="user-input">
+        <input type='text' id="book-choice" placeholder="Enter book name"/>
+        <button onclick="bookAlert()" id="search-buton">Book search</button>
+    </div>
+    <div class="books-container">
+    </div>
+    <script>
+        const books = [
+            'sapiens', 
+            'where is the green sheep', 
+            'harry potter and the goblet of fire',
+            'song of ice and fire',
+        ];
+        function bookAlert(){
+            const bookInput document.getElementByID("book-input").value;
+            let isBookFound = false;
+            isBookFound = books.includes('sapiens');
+            if (isBookFound === true) {
+                console.log("BOOK FOUND")
+            }
+            else {
+                console.log("BOOK NOT FOUND")
+            }
+    }
+    </script>
+</body>
+</html>
